@@ -1,9 +1,9 @@
-(function (window) {
+(function(window) {
     'use strict';
     window.opspark = window.opspark || {};
     window.opspark.collectable = window.opspark.collectable || {};
     let cannon = window.opspark.cannon;
-    
+
     /**
      * init: Initialize all cannons.
      * 
@@ -14,16 +14,19 @@
      *  cannon.create.onBottom(xLocation);
      *  cannon.create.onLeft(yLocation);
      *  cannon.create.onRight(yLocation);
-     */ 
-    cannon.init = function (game) {
+     */
+    cannon.init = function(game) {
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
-        
+
         // example: 
         cannon.create.onTop(450);
-        
-        
-        
+        cannon.create.onTop (220);
+        cannon.create.onBottom(500);
+        cannon.create.onLeft(26);
+        cannon.create.onRight(27);
+
+
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
