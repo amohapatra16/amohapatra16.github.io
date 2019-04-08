@@ -56,16 +56,14 @@
 			var update = function() {
 				// TODO 3 / 6 / 7 / 8
 				position = position + (speed * direction);    // increase position on every update
-				console.log("new position: " + position);
+			console.log("new position: " + position);
 				
 				box.css('left', position);      // set the 'left' CSS property of the box to the new value of position
 				if(position > boardWidth) {
     			direction = -1
-					
-				}
-    			if(position < 0){
-    			direction = 1
     				}
+    				if(position < 0){
+    			direction = 1	}
     				
     				
 
